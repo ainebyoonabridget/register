@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>Register</title> 
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+ </head> 
+ <body> 
+  <div id="container"> 
+   <input type="radio" id="login" name="btn" checked=""> 
+   <input type="radio" id="regis" name="btn"> 
+   <div id="btns"> 
+    <label for="login">Login</label> 
+    <label for="regis">Register</label> 
+    <span id="borda"></span> 
+   </div> 
+   <form id="form1" onsubmit="return validar()"> 
+    <div class="inputBox"> 
+     <input class="email" type="text"> 
+     <i class="fas fa-at"></i> 
+     <label>Email:</label> 
+     <span class="visor"></span> 
+    </div> 
+    <div class="inputBox"> 
+     <input class="senha" type="password"> 
+     <i class="fas fa-lock"></i> 
+     <label>Password:</label> 
+     <span class="mostrar"><i onclick="olhar(0)" class="fas fa-eye"></i></span> 
+     <span class="visor"></span> 
+    </div> 
+    <p>&nbsp; Forgot your password?</p> 
+    <input class="confirm" type="submit" value="LOG IN"> 
+    <center>
+     <span>Don't have an account?</span>
+     <label for="regis"> Register Here</label>
+    </center> 
+   </form> 
+   <form onsubmit="return validar1()" id="form2"> 
+    <div class="inputBox"> 
+     <input id="nome" type="text" style="text-transform: capitalize"> 
+     <i class="fas fa-user"></i> 
+     <label>Name:</label> 
+     <span class="visor"></span> 
+    </div> 
+    <div class="inputBox"> 
+     <input class="email" type="text"> 
+     <i class="fas fa-at"></i> 
+     <label>Email:</label> 
+     <span class="visor"></span> 
+    </div> 
+    <div class="inputBox"> 
+     <input class="senha" type="password"> 
+     <i class="fas fa-lock"></i> 
+     <label>Password:</label> 
+     <span class="mostrar"><i onclick="olhar(1)" class="fas fa-eye"></i></span> 
+     <span class="visor"></span> 
+    </div> 
+    <div class="inputBox"> 
+     <input class="senha" type="password"> 
+     <i class="fas fa-lock"></i> 
+     <label>Confirm password:</label> 
+     <span class="mostrar"><i onclick="olhar(2)" class="fas fa-eye"></i></span> 
+     <span class="visor"></span> 
+    </div> 
+    <input class="confirm" type="submit" value="REGISTER"> 
+    <center>
+     <span>Already have an account?</span>
+     <label for="login"> Login Here</label>
+    </center> 
+   </form> 
+  </div> 
+</body></html>
+</body>
+</html>

@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap');
+
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+body {
+  font-family: 'Baloo Thambi 2', cursive;
+  background: #001B2E;
+}
+
+#container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    height: 430px;
+    //border: 1px solid red;
+}
+
+#container .inputBox {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#container .inputBox i {
+    color: rgba(255,255,255,0.233);
+    position: absolute;
+    top: 13.5px;
+    left: 6.5px;
+    transition: .5s;
+}
+
+#container .inputBox input:focus ~ i {
+  color: #838383;
+  transform: scale(1);
+}
+
+#container .inputBox input {
+    width: 400px;
+    padding: 10px 5px 10px 30px;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,0.233);
+    color: rgba(255,255,255,0.7);
+    outline: none;
+    font-family: 'Baloo Thambi 2', cursive;
+  font-size: 10.5pt;
+  background: none;
+  text-transform: lowercase;
+}
+
+#container .inputBox label {
+    font-size: 11pt;
+    position: absolute;
+    top: -9px;
+    left: 0;
+    padding: 0 4px;
+    font-weight: bold;
+    color: rgba(255,255,255,0.233);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+#container #form1 {
+    transform: translateX(-500px);
+    transition: linear .5s;
+}
+
+#container #form2 {
+    transform: translateX(500px);
+    transition: linear .5s;
+    position: absolute;
+    top: 67px;
+}  
+
+#container #login:checked ~ #form1 {
+    transform: translateX(0);
+}
+
+#container #regis:checked ~ #form2 {
+    transform: translateX(0);
+}
+
+#container #btns {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#container #btns label {
+    font-size: 18pt;
+    margin: 0 13px;
+    transition: ease 1.3s;
+    cursor: pointer;
+    color: #EDE7CF;
+    //position: relative;
+    opacity: 0.6;
+}
+
+#container input[type=radio] {
+    display: none;
+}
+
+#container p {
+  font-size: 10.5pt;
+  margin-top: -15px;
+  float: right;
+  color: rgba(255,255,255,0.233);
+  cursor: pointer;
+}
+
+#container #login:checked ~ #btns label[for="login"],
+#container #regis:checked ~ #btns label[for="regis"] {
+    font-weight: bold;
+    color: #EDDEA4;
+    opacity: 1;
+}
+#container .confirm {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  background: rgba(255,255,255,0.233);,
+  outline: none;
+  cursor: pointer;
+    border: .2px solid #424242;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Baloo Thambi 2', cursive;
+    color: #DDDDDD;
+}
+
+#container center {
+  margin-top: 10px;
+  float: left;
+}
+
+#container center label {
+  color: #4169E1;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#container center span {
+  cursor: pointer;
+  color: rgba(255,255,255,0.233);
+}
+
+#container #btns #borda {
+  content: '';
+  height: 5px;
+  position: absolute;
+  border-radius: 0 0 50px 50px;
+  top: 27px;
+  transition: .7s;
+  border-bottom: 3px solid #EDDEA4;
+  border-radius: -1px;
+}
+
+#container #login:checked ~ #btns #borda {
+  width: 57px;
+  left: 132px;
+}
+
+#container #regis:checked ~ #btns #borda {
+  width: 85px;
+  left: 218px;
+}
+
+#container .inputBox .mostrar i {
+  left: 94.5%;
+  top: 17.5px;
+  cursor: pointer;
+  font-size: 10pt;
+  padding: 5px;
+}
+
+#container .inputBox i::after {
+  content: '';
+  width: 0px;
+  height: 14.6px;
+  position: absolute;
+  border-bottom: 2px solid rgba(255,255,255,.5);
+  bottom: -14px;
+  left: -24.5px;
+  transition: .5s;
+}
+
+#container .inputBox input:focus ~ i::after {
+  width: 455px;
+}
+
+#container .inputBox .visor {
+  color: red;
+  opacity: 0.7;
+  position: absolute;
+  left: 20px;
+  bottom: -18px;
+  font-size: 14.5px;
+  top: 42px;
+}
+
+#container .inputBox .visor i {
+  color: red;
+  position: absolute;
+  top: 5px;
+  left: -15px;
+  font-size: 11px;
+}
